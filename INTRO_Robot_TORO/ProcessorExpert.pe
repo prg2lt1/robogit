@@ -29,7 +29,11 @@
     <UseExistingModules>true</UseExistingModules>
     <RenamePeripheries>false</RenamePeripheries>
     <Autodependency>true</Autodependency>
+<<<<<<< HEAD
     <ProjectCompNumb>344</ProjectCompNumb>
+=======
+    <ProjectCompNumb>304</ProjectCompNumb>
+>>>>>>> 6927ae9cb01888a10db31ab407a60ccc77449a0f
     <DelUnusedPreviouslyGenFiles>true</DelUnusedPreviouslyGenFiles>
     <GeneratedCodeFrozen>false</GeneratedCodeFrozen>
     <AssignInitComponentNameToPrph>true</AssignInitComponentNameToPrph>
