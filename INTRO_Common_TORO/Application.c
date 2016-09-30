@@ -129,6 +129,8 @@ void APP_Start(void) {
     EVNT_HandleEvent(APP_EventHandler, TRUE);
 #endif
     WAIT1_Waitms(25); /* just wait for some arbitrary time .... */
+
+
   }
 #endif
 }
