@@ -30,10 +30,10 @@
 /* Including needed modules to compile this module/procedure */
 #include "Cpu.h"
 #include "Events.h"
+#include "LEDPin1.h"
+#include "BitIoLdd1.h"
 #include "WAIT1.h"
 #include "CS1.h"
-#include "LEDpin2.h"
-#include "BitIoLdd2.h"
 #include "HF1.h"
 #include "KSDK1.h"
 #include "UTIL1.h"
