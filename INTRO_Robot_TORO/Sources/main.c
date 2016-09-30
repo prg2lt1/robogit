@@ -55,6 +55,11 @@ int main(void)
   /*** End of Processor Expert internal initialization.                    ***/
 
   /* Write your code here */
+
+
+
+
+
   /* For example: for(;;) { } */
   APP_Start();
 #if 0
