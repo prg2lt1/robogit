@@ -129,6 +129,14 @@ void APP_Start(void) {
     EVNT_HandleEvent(APP_EventHandler, TRUE);
 #endif
     WAIT1_Waitms(25); /* just wait for some arbitrary time .... */
+
+    {
+       LEDPin1_NegVal();
+       LEDPin2_NegVal();
+       LEDPin3_NegVal();
+       WAIT1_Waitms(800);
+       }
+
   }
 #endif
 }
