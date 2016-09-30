@@ -10,11 +10,7 @@
 /*##                                   */
 /*##     Compiler  : GNU C Compiler    */
 /*##                                   */
-<<<<<<< HEAD
-/*##     Date/Time : 2016-09-30, 15:05, # CodeGen: 0 */
-=======
-/*##     Date/Time : 2016-09-30, 14:47, # CodeGen: 0 */
->>>>>>> 6927ae9cb01888a10db31ab407a60ccc77449a0f
+/*##     Date/Time : 2016-09-30, 15:23, # CodeGen: 3 */
 /*##                                   */
 /*##     Abstract  :                   */
 /*##                                   */
