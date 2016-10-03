@@ -57,6 +57,11 @@ int main(void)
   /*** End of Processor Expert internal initialization.                    ***/
 
   /* Write your code here */
+  for(;;)
+  {
+	  LEDPin1_NegVal();
+	  WAIT1_Waitms(250);
+  }
 
   /* For example: for(;;) { } */
   APP_Start();
