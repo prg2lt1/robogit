@@ -63,7 +63,7 @@ int main(void)
   /* Write your code here */
   /* For example: for(;;) { } */
 
-
+  EVNT_Init();
    APP_Start();
 
 
