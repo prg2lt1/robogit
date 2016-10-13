@@ -27,28 +27,44 @@ static EVNT_MemUnit EVNT_Events[((EVNT_NOF_EVENTS-1)/EVNT_MEM_UNIT_NOF_BITS)+1];
 #define GET_EVENT(event) \
   (bool)(EVNT_Events[(event)/EVNT_MEM_UNIT_NOF_BITS]&((1<<(EVNT_MEM_UNIT_NOF_BITS-1))>>(((event)%EVNT_MEM_UNIT_NOF_BITS)))) /*!< Return TRUE if event is set */
 
+
 void EVNT_SetEvent(EVNT_Handle event) {
   /* \todo Make it reentrant */
+  CS1_CriticalVariable();
+  CS1_EnterCritical();
   SET_EVENT(event);
+  CS1_ExitCritical();
 }
 
 void EVNT_ClearEvent(EVNT_Handle event) {
   /* \todo Make it reentrant */
+  CS1_CriticalVariable();
+  CS1_EnterCritical();
   CLR_EVENT(event);
+  CS1_ExitCritical();
 }
 
 bool EVNT_EventIsSet(EVNT_Handle event) {
   /* \todo Make it reentrant */
-  return GET_EVENT(event);
+  bool tmp;
+  CS1_CriticalVariable();
+  CS1_EnterCritical();
+  tmp = GET_EVENT(event);
+  CS1_ExitCritical();
+  return tmp;
 }
 
+// Zweimal eine Critical Section
 bool EVNT_EventIsSetAutoClear(EVNT_Handle event) {
   bool res;
+  CS1_CriticalVariable();
   /* \todo Make it reentrant */
+  CS1_EnterCritical();
   res = GET_EVENT(event);
   if (res) {
     CLR_EVENT(event); /* automatically clear event */
   }
+  CS1_ExitCritical();
   return res;
 }
 
@@ -56,7 +72,9 @@ void EVNT_HandleEvent(void (*callback)(EVNT_Handle), bool clearEvent) {
    /* Handle the one with the highest priority. Zero is the event with the highest priority. */
    EVNT_Handle event;
    /* \todo Make it reentrant */
+   CS1_CriticalVariable();
 
+   CS1_EnterCritical();
    for (event=(EVNT_Handle)0; event<EVNT_NOF_EVENTS; event++) { /* does a test on every event */
      if (GET_EVENT(event)) { /* event present? */
        if (clearEvent) {
@@ -65,6 +83,7 @@ void EVNT_HandleEvent(void (*callback)(EVNT_Handle), bool clearEvent) {
        break; /* get out of loop */
      }
    }
+   CS1_ExitCritical();
    if (event != EVNT_NOF_EVENTS) {
      callback(event);
      /* Note: if the callback sets the event, we will get out of the loop.
@@ -75,7 +94,7 @@ void EVNT_HandleEvent(void (*callback)(EVNT_Handle), bool clearEvent) {
 
 void EVNT_Init(void) {
   uint8_t i;
-
+  // No Criticalsection, because at Inittime the interrupts are switched off
   i = 0;
   do {
     EVNT_Events[i] = 0; /* initialize data structure */
