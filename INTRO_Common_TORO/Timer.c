@@ -25,12 +25,12 @@ void TMR_OnInterrupt(void) {
   /* this one gets called from an interrupt!!!! */
   /*! \todo Add code for a blinking LED here */
 
-<<<<<<< HEAD
-=======
+//<<<<<<< HEAD
+//=======
 	// 100x mal diese Funktionsaufrufen
-	// jede Sekunde dieses Event auslösen.
+	// jede Sekunde dieses Event ausloesen.
 
->>>>>>> 7c2a9c81d3091dc2ce7e379127581cc0cdfee080
+//>>>>>>> 7c2a9c81d3091dc2ce7e379127581cc0cdfee080
 	EVNT_SetEvent(EVNT_LED_HEARTBEAT);
 }
 
