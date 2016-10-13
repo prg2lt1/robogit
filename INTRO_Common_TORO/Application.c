@@ -46,6 +46,8 @@ void APP_EventHandler(EVNT_Handle event) {
 #if PL_CONFIG_HAS_BUZZER
     BUZ_PlayTune(BUZ_TUNE_WELCOME);
 #endif
+    WAIT1_Waitms(500);
+    LED1_Off();
     break;
   case EVNT_LED_HEARTBEAT:
     LED1_Neg();
