@@ -32,6 +32,9 @@
 #include "Events.h"
 #include "LEDPin1.h"
 #include "BitIoLdd1.h"
+#include "TU1.h"
+#include "TI1.h"
+#include "TimerIntLdd1.h"
 #include "WAIT1.h"
 #include "CS1.h"
 #include "HF1.h"
@@ -56,12 +59,8 @@ int main(void)
   PE_low_level_init();
   /*** End of Processor Expert internal initialization.                    ***/
 
-  /* Write your code here */
-  for(;;)
-  {
-	  LEDPin1_NegVal();
-	  WAIT1_Waitms(250);
-  }
+
+
 
   /* For example: for(;;) { } */
   APP_Start();

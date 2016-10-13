@@ -19,9 +19,16 @@
   #include "Tacho.h"
 #endif
 
+
+// every 10 seconds an interrupt
 void TMR_OnInterrupt(void) {
   /* this one gets called from an interrupt!!!! */
   /*! \todo Add code for a blinking LED here */
+
+	// 100x mal diese Funktionsaufrufen
+	// jede Sekunde dieses Event auslösen.
+
+	EVNT_SetEvent(EVNT_LED_HEARTBEAT);
 }
 
 void TMR_Init(void) {
