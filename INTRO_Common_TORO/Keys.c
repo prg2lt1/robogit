@@ -19,17 +19,25 @@
 #if PL_CONFIG_BOARD_IS_ROBO_V2
   #include "PORT_PDD.h"
 #endif
-#include "FreeRTOSConfig.h"
-#if configUSE_SEGGER_SYSTEM_VIEWER_HOOKS
-  #include "SYS1.h"
+
+#if PL_CONFIG_HAS_RTOS
+	#include "FreeRTOSConfig.h"
+	#if configUSE_SEGGER_SYSTEM_VIEWER_HOOKS
+  	  	  #include "SYS1.h"
+	#endif
 #endif
 
 void KEY_Scan(void) {
-  #if PL_CONFIG_NOF_KEYS >= 1 && !PL_CONFIG_KEY_1_ISR
-    if (KEY1_Get()) { /* key pressed */
-      EVNT_SetEvent(EVNT_SW1_PRESSED);
+  #if PL_CONFIG_NOF_KEYS >= 1 && !PL_CONFIG_KEY_5_ISR
+    if (KEY5_Get()) { /* key pressed */
+      EVNT_SetEvent(EVNT_SW5_PRESSED);
     }
   #endif
+#if PL_CONFIG_NOF_KEYS >= 1 && !PL_CONFIG_KEY_6_ISR
+  if (KEY6_Get()) { /* key pressed */
+    EVNT_SetEvent(EVNT_SW6_PRESSED);
+  }
+#endif
     /*! \todo check handling all keys */
 }
 

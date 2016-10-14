@@ -56,9 +56,21 @@ void APP_EventHandler(EVNT_Handle event) {
 #if PL_CONFIG_HAS_KEYS
   #if PL_CONFIG_NOF_KEYS>=1
   case EVNT_SW1_PRESSED:
-    LED2_Neg();
+	  LEDPin2_SetVal();
+  case EVNT_SW2_PRESSED:
+      LED2_Neg();
+  case EVNT_SW3_PRESSED:
+      LED2_Neg();
+  case EVNT_SW4_PRESSED:
+      LED2_Neg();
+  case EVNT_SW5_PRESSED:
+      LED2_Neg();
+  case EVNT_SW6_PRESSED:
+      LED2_Neg();
+  case EVNT_SW7_PRESSED:
+      LED2_Neg();
     //CLS1_SendStr("SW1 pressed\r\n", CLS1_GetStdio()->stdOut);
-    SHELL_SendString("SW1 pressed\r\n");
+    //SHELL_SendString("SW1 pressed\r\n");
     #if PL_CONFIG_HAS_BUZZER
     BUZ_PlayTune(BUZ_TUNE_BUTTON);
     #endif
@@ -123,9 +135,18 @@ void APP_Start(void) {
   vTaskStartScheduler(); /* start the RTOS, create the IDLE task and run my tasks (if any) */
   /* does usually not return! */
 #else
+
+
+
+
+  CLS1_SendStr(pstr, CLS1_GetStdio()->stdOut);
+
   for(;;) {
 #if PL_CONFIG_HAS_KEYS
-    KEY_Scan();
+
+	  KEY_Scan();
+
+    }
 #endif
 #if PL_CONFIG_HAS_EVENTS
     EVNT_HandleEvent(APP_EventHandler, TRUE);
@@ -135,6 +156,6 @@ void APP_Start(void) {
 
   }
 #endif
-}
+
 
 
