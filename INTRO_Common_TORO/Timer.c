@@ -31,7 +31,16 @@ void TMR_OnInterrupt(void) {
 	// jede Sekunde dieses Event ausloesen.
 
 //>>>>>>> 7c2a9c81d3091dc2ce7e379127581cc0cdfee080
-	EVNT_SetEvent(EVNT_LED_HEARTBEAT);
+
+	static unsigned int cnt = 0;
+#define BLINK_PERIOD_MS 1000
+	cnt++;
+#if PL_CONFIG_HAS_EVENTS
+  if ((cnt%(BLINK_PERIOD_MS/TMR_TICK_MS))==0) { /* every two seconds */
+    EVNT_SetEvent(EVNT_LED_HEARTBEAT);
+  }
+#endif
+
 }
 
 void TMR_Init(void) {
