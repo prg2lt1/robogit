@@ -136,11 +136,13 @@ void APP_Start(void) {
   /* does usually not return! */
 #else
 
-
-
-
-  CLS1_SendStr(pstr, CLS1_GetStdio()->stdOut);
-
+  /*
+   * geit nid....chame lösche
+   *
+  char str = "Hello World \r\n";
+  char *pstr = &str;
+  CLS1_SendStr(str, CLS1_GetStdio()->stdOut);
+*/
   for(;;) {
 #if PL_CONFIG_HAS_KEYS
 
