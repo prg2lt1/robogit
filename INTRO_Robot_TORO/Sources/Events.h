@@ -35,11 +35,19 @@
 #include "IO_Map.h"
 #include "LEDPin1.h"
 #include "BitIoLdd1.h"
+#include "LEDPin2.h"
+#include "BitIoLdd2.h"
+#include "SW1.h"
+#include "BitIoLdd3.h"
 #include "TU1.h"
 #include "TI1.h"
 #include "TimerIntLdd1.h"
+#include "RTT1.h"
 #include "WAIT1.h"
 #include "CS1.h"
+#include "AS2.h"
+#include "ASerialLdd4.h"
+#include "CLS1.h"
 #include "HF1.h"
 #include "KSDK1.h"
 #include "UTIL1.h"
@@ -48,7 +56,6 @@
 #ifdef __cplusplus
 extern "C" {
 #endif 
-
 /*
 ** ===================================================================
 **     Event       :  Cpu_OnNMIINT (module Events)
