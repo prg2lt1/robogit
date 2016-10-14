@@ -28,6 +28,7 @@
 
 #include "Cpu.h"
 #include "Events.h"
+#include "Timer.h"	// added by NAR 14.10.16
 
 #ifdef __cplusplus
 extern "C" {
@@ -68,9 +69,11 @@ void Cpu_OnNMIINT(void)
 **     Returns     : Nothing
 ** ===================================================================
 */
+
+
 void TI1_OnInterrupt(void)
 {
-  /* Write your code here ... */
+	TMR_OnInterrupt();
 }
 
 /* END Events */

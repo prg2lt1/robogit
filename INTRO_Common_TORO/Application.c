@@ -58,7 +58,7 @@ void APP_EventHandler(EVNT_Handle event) {
   case EVNT_SW1_PRESSED:
     LED2_Neg();
     //CLS1_SendStr("SW1 pressed\r\n", CLS1_GetStdio()->stdOut);
-    SHELL_SendString("SW1 pressed\r\n");
+    //SHELL_SendString("SW1 pressed\r\n");
     #if PL_CONFIG_HAS_BUZZER
     BUZ_PlayTune(BUZ_TUNE_BUTTON);
     #endif
@@ -125,7 +125,11 @@ void APP_Start(void) {
 #else
   for(;;) {
 #if PL_CONFIG_HAS_KEYS
-    KEY_Scan();
+	if(KEY1_Get())
+	{
+		WAIT1_Waitms(100);
+		KEY_Scan();
+	}
 #endif
 #if PL_CONFIG_HAS_EVENTS
     EVNT_HandleEvent(APP_EventHandler, TRUE);
