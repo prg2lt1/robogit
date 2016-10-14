@@ -14,7 +14,6 @@
 #if PL_CONFIG_HAS_RTOS
 	#include "FRTOS1.h"
 #endif
-
 #if PL_CONFIG_HAS_BLUETOOTH
   #include "BT1.h"
 #endif
@@ -213,7 +212,6 @@ void SHELL_ParseCmd(unsigned char *cmd) {
   #endif
   /* \todo Extend as needed */
 }
-
 #if PL_CONFIG_HAS_RTOS
 static void ShellTask(void *pvParameters) {
   /* \todo Extend as needed */
