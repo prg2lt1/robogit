@@ -46,39 +46,67 @@ void APP_EventHandler(EVNT_Handle event) {
 #if PL_CONFIG_HAS_BUZZER
     BUZ_PlayTune(BUZ_TUNE_WELCOME);
 #endif
+    EVNT_SetEvent(EVNT_LED_OFF);
     WAIT1_Waitms(500);
-    LED1_Off();
     break;
+  case EVNT_LED_OFF:
+  	LED1_Off();
+  	break;
   case EVNT_LED_HEARTBEAT:
     LED1_Neg();
     break;
 
 #if PL_CONFIG_HAS_KEYS
   #if PL_CONFIG_NOF_KEYS>=1
-  case EVNT_SW1_PRESSED:
-	  LEDPin2_SetVal();
-  case EVNT_SW2_PRESSED:
-      LED2_Neg();
-  case EVNT_SW3_PRESSED:
-      LED2_Neg();
-  case EVNT_SW4_PRESSED:
-      LED2_Neg();
-  case EVNT_SW5_PRESSED:
-      LED2_Neg();
-  case EVNT_SW6_PRESSED:
-      LED2_Neg();
-  case EVNT_SW7_PRESSED:
-      LED2_Neg();
+    case EVNT_SW1_PRESSED:
+    LED1_Neg();
     //CLS1_SendStr("SW1 pressed\r\n", CLS1_GetStdio()->stdOut);
-    //SHELL_SendString("SW1 pressed\r\n");
+    SHELL_SendString("SW1 pressed\r\n");
     #if PL_CONFIG_HAS_BUZZER
     BUZ_PlayTune(BUZ_TUNE_BUTTON);
     #endif
     break;
   #endif
+  #if PL_CONFIG_NOF_KEYS>=2
+  case EVNT_SW2_PRESSED:
+    SHELL_SendString("SW2 pressed\r\n");
+    LED1_Neg();
+    break;
+  #endif
+  #if PL_CONFIG_NOF_KEYS>=3
+  case EVNT_SW3_PRESSED:
+    SHELL_SendString("SW3 pressed\r\n");
+    LED1_Neg();
+    break;
+  #endif
+  #if PL_CONFIG_NOF_KEYS>=4
+  case EVNT_SW4_PRESSED:
+    SHELL_SendString("SW4 pressed\r\n");
+    LED1_Neg();
+    break;
+  #endif
+  #if PL_CONFIG_NOF_KEYS>=5
+  case EVNT_SW5_PRESSED:
+    SHELL_SendString("SW5 pressed\r\n");
+    LED1_Neg();
+    break;
+  #endif
+  #if PL_CONFIG_NOF_KEYS>=6
+  case EVNT_SW6_PRESSED:
+    SHELL_SendString("SW6 pressed\r\n");
+    LED1_Neg();
+    break;
+  #endif
+  #if PL_CONFIG_NOF_KEYS>=7
+  case EVNT_SW7_PRESSED:
+    SHELL_SendString("SW7 pressed\r\n");
+    LED1_Neg();
+    break;
+  #endif
 #endif /* PL_CONFIG_HAS_KEYS */
 
-    /* \todo extend handler as needed */
+  default:
+    break;
    } /* switch */
 }
 #endif /* PL_CONFIG_HAS_EVENTS */
@@ -127,8 +155,8 @@ void APP_Start(void) {
 #if PL_CONFIG_HAS_EVENTS
   EVNT_SetEvent(EVNT_STARTUP);
 #endif
-#if CLS1_DEFAULT_SERIAL
-  CLS1_SendStr("Hello World!\r\n", CLS1_GetStdio()->stdOut);
+#if PL_CONFIG_HAS_SHELL && CLS1_DEFAULT_SERIAL
+  CLS1_SendStr((uint8_t*)"Hello World!\r\n", CLS1_GetStdio()->stdOut);
 #endif
   APP_AdoptToHardware();
 #if PL_CONFIG_HAS_RTOS
@@ -136,24 +164,21 @@ void APP_Start(void) {
   /* does usually not return! */
 #else
 
-  /*
-   * geit nid....chame lösche
-   *
+  /**
+   geit nid....chame lösche
+
   char str = "Hello World \r\n";
   char *pstr = &str;
   CLS1_SendStr(str, CLS1_GetStdio()->stdOut);
 */
   for(;;) {
 #if PL_CONFIG_HAS_KEYS
-
 	  KEY_Scan();
-
-    }
 #endif
 #if PL_CONFIG_HAS_EVENTS
     EVNT_HandleEvent(APP_EventHandler, TRUE);
 #endif
-    WAIT1_Waitms(25); /* just wait for some arbitrary time .... */
+    //WAIT1_Waitms(25); /* just wait for some arbitrary time .... */
 
 
   }

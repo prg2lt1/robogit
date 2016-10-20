@@ -72,7 +72,9 @@ void Cpu_OnNMIINT(void)
 void TI1_OnInterrupt(void)
 {
   /* my comment: ROUTING to Timer.c, so that it will be Common/Shared...oh*/
+	#if PL_CONFIG_HAS_TIMER
 	TMR_OnInterrupt();
+	#endif
 }
 
 /*
@@ -90,6 +92,7 @@ void TI1_OnInterrupt(void)
 void SW7_OnInterrupt(void)
 {
   /* Write your code here ... */
+	
 	KEY_OnInterrupt(KEY_BTN7);
 }
 
