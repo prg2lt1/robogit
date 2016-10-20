@@ -46,7 +46,7 @@ void APP_EventHandler(EVNT_Handle event) {
 #if PL_CONFIG_HAS_BUZZER
     BUZ_PlayTune(BUZ_TUNE_WELCOME);
 #endif
-    EVNT_SetEvent(EVNT_LED_OFF);
+    //EVNT_SetEvent(EVNT_LED_OFF);
     WAIT1_Waitms(500);
     break;
   case EVNT_LED_OFF:
