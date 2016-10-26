@@ -65,12 +65,12 @@ void Cpu_OnNMIINT(void)
 **         when the component is enabled - <Enable> and the events are
 **         enabled - <EnableEvent>). This event is enabled only if a
 **         <interrupt service/event> is enabled.
+**         This interrupt will be called every 10 miliseconds
+**         -> Set by PE component inspector
 **     Parameters  : None
 **     Returns     : Nothing
 ** ===================================================================
 */
-
-
 void TI1_OnInterrupt(void)
 {
 	TMR_OnInterrupt();

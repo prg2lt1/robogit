@@ -43,9 +43,9 @@ void APP_EventHandler(EVNT_Handle event) {
   switch(event) {
   case EVNT_STARTUP:
     LED1_On(); /* just do something */
-#if PL_CONFIG_HAS_BUZZER
-    BUZ_PlayTune(BUZ_TUNE_WELCOME);
-#endif
+	#if PL_CONFIG_HAS_BUZZER
+    	BUZ_PlayTune(BUZ_TUNE_WELCOME);
+	#endif
     EVNT_SetEvent(EVNT_LED_OFF);
     WAIT1_Waitms(5000);
     break;
@@ -62,7 +62,7 @@ void APP_EventHandler(EVNT_Handle event) {
     LED1_Neg();
     SHELL_SendString("SW1 pressed\r\n");
     #if PL_CONFIG_HAS_BUZZER
-    BUZ_PlayTune(BUZ_TUNE_BUTTON);
+    	BUZ_PlayTune(BUZ_TUNE_BUTTON);
     #endif
     break;
   #endif

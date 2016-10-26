@@ -20,11 +20,13 @@
 #endif
 
 
-// every 10 seconds an interrupt
+// every 1 miliseconds an interrupt
 void TMR_OnInterrupt(void) {
   /* this one gets called from an interrupt!!!! */
   /*! \todo Add code for a blinking LED here */
-
+	#if PL_CONFIG_HAS_TRIGGER
+		TRG_AddTick();
+	#endif
 
 	static unsigned int cnt = 0;
 	#define BLINK_PERIOD_MS 1000
@@ -35,8 +37,8 @@ void TMR_OnInterrupt(void) {
 		EVNT_SetEvent(EVNT_LED_HEARTBEAT);
 	  }
 	#endif
-
 }
+
 
 void TMR_Init(void) {
 }
