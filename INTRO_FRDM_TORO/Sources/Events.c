@@ -73,7 +73,7 @@ void TI1_OnInterrupt(void)
 {
   /* my comment: ROUTING to Timer.c, so that it will be Common/Shared...oh*/
 	#if PL_CONFIG_HAS_TIMER
-	TMR_OnInterrupt();
+	//TMR_OnInterrupt();
 	#endif
 }
 
