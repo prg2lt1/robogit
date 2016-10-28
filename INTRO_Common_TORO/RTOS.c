@@ -24,7 +24,7 @@ static void AppTask(void* param) {
       LED2_Neg();
     }
     /* \todo handle your application code here */
-    //FRTOS1_vTaskDelay(pdMS_TO_TICKS(500));
+    FRTOS1_vTaskDelay(pdMS_TO_TICKS(500));
   }
 }
 
@@ -36,6 +36,9 @@ void RTOS_Init(void) {
   /*! \todo Create tasks here */
   if (FRTOS1_xTaskCreate(AppTask, (uint8_t *)"App1", configMINIMAL_STACK_SIZE, (void*)&led1, tskIDLE_PRIORITY, NULL) != pdPASS) {
     for(;;){} /* error case only, stay here! */
+  }
+  if (FRTOS1_xTaskCreate(AppTask, (uint8_t *)"App2", configMINIMAL_STACK_SIZE, (void*)&led2, tskIDLE_PRIORITY, NULL) != pdPASS) {
+      for(;;){} /* error case only, stay here! */
   }
 }
 
