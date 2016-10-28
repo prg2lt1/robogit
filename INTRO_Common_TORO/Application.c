@@ -13,6 +13,7 @@
 #include "WAIT1.h"
 #include "CS1.h"
 #include "Keys.h"
+#include "KeyDebounce.h"
 #include "KIN1.h"
 #if PL_CONFIG_HAS_SHELL
   #include "CLS1.h"
@@ -20,6 +21,7 @@
 #if PL_CONFIG_HAS_BUZZER
   #include "Buzzer.h"
 #endif
+
 #if PL_CONFIG_HAS_RTOS
   #include "FRTOS1.h"
   #include "RTOS.h"
@@ -81,7 +83,10 @@ void APP_EventHandler(EVNT_Handle event) {
   #if PL_CONFIG_NOF_KEYS>=4
   case EVNT_SW4_PRESSED:
     SHELL_SendString("SW4 pressed\r\n");
-    LED1_Put(0);
+    LED1_On(); /* just do something */
+    WAIT1_Waitms(5000);
+    EVNT_SetEvent(EVNT_LED_OFF);
+
     break;
   #endif
   #if PL_CONFIG_NOF_KEYS>=5
@@ -171,18 +176,23 @@ void APP_Start(void) {
   CLS1_SendStr(str, CLS1_GetStdio()->stdOut);
 */
   for(;;) {
-#if PL_CONFIG_HAS_KEYS
-	  KEY_Scan();
-#endif
-#if PL_CONFIG_HAS_EVENTS
-    EVNT_HandleEvent(APP_EventHandler, TRUE);
-#endif
+	#if PL_CONFIG_HAS_KEYS
+  	  #if PL_CONFIG_HAS_DEBOUNCE
+	  	  KEYDBNC_Process();
+  	  #else
+	  	  KEY_Scan();
+  	  #endif
+	#endif
+	#if PL_CONFIG_HAS_EVENTS
+	  	  EVNT_HandleEvent(APP_EventHandler, TRUE);
+	#endif
     //WAIT1_Waitms(25); /* just wait for some arbitrary time .... */
 
 
   }
-}
 #endif
+}
+
 
 
 
