@@ -91,6 +91,7 @@ void KEY_EnableInterrupts(void) {
 #endif
 }
 
+#if PL_CONFIG_HAS_KBI
 void KEY_DisableInterrupts(void) {
 #if PL_CONFIG_KEY_1_ISR
   SW1_Disable();
@@ -114,7 +115,9 @@ void KEY_DisableInterrupts(void) {
   SW7_Disable();
 #endif
 }
+#endif
 
+#if PL_CONFIG_HAS_KBI
 void KEY_OnInterrupt(KEY_Buttons button) {
 #if configUSE_SEGGER_SYSTEM_VIEWER_HOOKS
   SYS1_RecordEnterISR();
@@ -167,6 +170,7 @@ void KEY_OnInterrupt(KEY_Buttons button) {
   SYS1_RecordExitISR();
 #endif
 }
+#endif
 
 
 /*! \brief Key driver initialization */

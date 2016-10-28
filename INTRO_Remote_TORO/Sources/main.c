@@ -30,6 +30,7 @@
 /* Including needed modules to compile this module/procedure */
 #include "Cpu.h"
 #include "Events.h"
+#include "FRTOS1.h"
 #include "LEDPin1.h"
 #include "BitIoLdd17.h"
 #include "RTT1.h"
@@ -56,6 +57,9 @@
 #include "WAIT1.h"
 #include "UTIL1.h"
 #include "KIN1.h"
+#include "TI1.h"
+#include "TimerIntLdd1.h"
+#include "TU1.h"
 #include "KSDK1.h"
 #include "HF1.h"
 #include "CS1.h"
@@ -74,7 +78,7 @@ int main(void)
   /* Write your local variable definition here */
 
   /*** Processor Expert internal initialization. DON'T REMOVE THIS CODE!!! ***/
-  PE_low_level_init();
+	PE_low_level_init();
   /*** End of Processor Expert internal initialization.                    ***/
 
   /* Write your code here */
