@@ -157,7 +157,7 @@ void APP_Start(void) {
 #endif
   PL_Init();
 #if PL_CONFIG_HAS_EVENTS
-  EVNT_SetEvent(EVNT_STARTUP);
+  //EVNT_SetEvent(EVNT_STARTUP);
 #endif
 #if PL_CONFIG_HAS_SHELL && CLS1_DEFAULT_SERIAL
   CLS1_SendStr((uint8_t*)"Hello World!\r\n", CLS1_GetStdio()->stdOut);
