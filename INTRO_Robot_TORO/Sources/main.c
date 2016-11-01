@@ -34,20 +34,22 @@
 #include "BitIoLdd1.h"
 #include "LEDPin2.h"
 #include "BitIoLdd2.h"
-#include "BUZ1.h"
-#include "BitIoLdd4.h"
 #include "SW1.h"
 #include "BitIoLdd3.h"
+#include "AS1.h"
+#include "ASerialLdd3.h"
+#include "CLS1.h"
 #include "FRTOS1.h"
-#include "TU1.h"
+#include "RTOSCNTRLDD1.h"
 #include "TI1.h"
 #include "TimerIntLdd1.h"
+#include "TU1.h"
 #include "RTT1.h"
+#include "SYS1.h"
+#include "BUZ1.h"
+#include "BitIoLdd4.h"
 #include "WAIT1.h"
 #include "CS1.h"
-#include "AS1.h"
-#include "ASerialLdd4.h"
-#include "CLS1.h"
 #include "HF1.h"
 #include "KSDK1.h"
 #include "UTIL1.h"
@@ -60,6 +62,11 @@
 /* User includes (#include below this line is not maintained by Processor Expert) */
 #include "Application.h"
 
+void delay(void) {
+  volatile unsigned char i;
+
+  for(i=0;i<100;i++);
+}
 /*lint -save  -e970 Disable MISRA rule (6.3) checking. */
 int main(void)
 /*lint -restore Enable MISRA rule (6.3) checking. */
@@ -70,7 +77,7 @@ int main(void)
   PE_low_level_init();
   /*** End of Processor Expert internal initialization.                    ***/
 
-
+  /* Write your code here */
   /* For example: for(;;) { } */
   APP_Start();
 #if 0
