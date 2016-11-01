@@ -212,21 +212,6 @@ void KEYDBNC_Process(void) {
    * But be careful: only if we are not debouncing, and if we have a key press if we are polling.
    * And you will need to disable the keyboard interrupts too!
    */
-  /*! \todo Only debounce if you are not debouncing already */
-  // NOt sure if checking keys is correct, because in DBNC_Process the keys wil be scanned again
-  DBNC_KeySet keyset = KEYDBNC_FSMdata.getKeys();
-  if(keyset != NULL)
-  {
-	// check, if not debouncing and keys pressed
-    if(KEYDBNC_FSMdata.state == DBNC_KEY_IDLE && keyset > 0)
-    {
-	    DBNC_Process(&KEYDBNC_FSMdata);
-    }
-
-  }
-
-
-
   if (KEYDBNC_FSMdata.state==DBNC_KEY_IDLE && KEYDBNC_GetKeys()!=0) { /* a key is pressed and we are not debouncing */
   #if PL_CONFIG_HAS_KBI
     KEY_DisableInterrupts(); /* disable interrupts for all keys */
