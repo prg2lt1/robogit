@@ -48,8 +48,6 @@
 #include "BitIoLdd4.h"
 #include "WAIT1.h"
 #include "CS1.h"
-#include "AS1.h"
-#include "ASerialLdd4.h"
 #include "KSDK1.h"
 #include "UTIL1.h"
 #include "KIN1.h"
