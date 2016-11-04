@@ -3,7 +3,7 @@
   <Header>
     <Name>INTRO_Remote_TORO</Name>
     <SavedBy>Erich Styger Local</SavedBy>
-    <ModificationStamp>19</ModificationStamp>
+    <ModificationStamp>22</ModificationStamp>
     <Date>2016-09-20</Date>
     <IDE>Eclipse IDE</IDE>
     <PEversion>1.12.2.RT7_b1550-0615</PEversion>
@@ -29,7 +29,7 @@
     <UseExistingModules>true</UseExistingModules>
     <RenamePeripheries>false</RenamePeripheries>
     <Autodependency>true</Autodependency>
-    <ProjectCompNumb>182</ProjectCompNumb>
+    <ProjectCompNumb>277</ProjectCompNumb>
     <DelUnusedPreviouslyGenFiles>true</DelUnusedPreviouslyGenFiles>
     <GeneratedCodeFrozen>false</GeneratedCodeFrozen>
     <AssignInitComponentNameToPrph>true</AssignInitComponentNameToPrph>
@@ -127,7 +127,7 @@
         <ItemSymbol>ClockSettingGrp</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Expanded>true</Expanded>
+        <Expanded>false</Expanded>
       </ItemState>
       <ItemState>
         <ItemSymbol>ICLK</ItemSymbol>
@@ -518,7 +518,7 @@
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>100</Value>
+        <Value>96</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>MCG_PRDIV_CLKMode0</ItemSymbol>
@@ -3777,7 +3777,7 @@
         <ReadOnly>false</ReadOnly>
         <ListItemCount>1</ListItemCount>
         <UserReadOnly>false</UserReadOnly>
-        <Expanded>true</Expanded>
+        <Expanded>false</Expanded>
       </ItemState>
       <ItemState>
         <ItemSymbol>SpeedMode0</ItemSymbol>
@@ -3877,7 +3877,7 @@
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>25</Value>
+        <Value>24</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>MCGOUTSelSpeedMode0</ItemSymbol>
@@ -3932,7 +3932,7 @@
       <ItemState>
         <ItemSymbol>MCGOutputSpeedMode0</ItemSymbol>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>100</Value>
+        <Value>96</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>IRCLKClkSpeedMode0</ItemSymbol>
@@ -3975,7 +3975,7 @@
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>50</Value>
+        <Value>48</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>OUTDIV2PrescSpeedMode0</ItemSymbol>
@@ -3996,7 +3996,7 @@
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>50</Value>
+        <Value>48</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>FBClockCondGrp0</ItemSymbol>
@@ -4046,7 +4046,7 @@
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>25</Value>
+        <Value>24</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>USB0_CLKINSpeedMode0</ItemSymbol>
@@ -4073,7 +4073,7 @@
       <ItemState>
         <ItemSymbol>PLLFLLClockSpeedMode0</ItemSymbol>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>100</Value>
+        <Value>96</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>I2S0_CLKINCondGrp0</ItemSymbol>
@@ -5433,9 +5433,9 @@
       <ItemId33>82</ItemId33>
       <Value33>true</Value33>
       <ItemId34>84</ItemId34>
-      <Value34>false</Value34>
+      <Value34>true</Value34>
       <ItemId35>89</ItemId35>
-      <Value35>false</Value35>
+      <Value35>true</Value35>
       <ItemId36>90</ItemId36>
       <Value36>true</Value36>
       <ItemId37>94</ItemId37>
@@ -5752,7 +5752,7 @@
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
         <Value>true</Value>
-        <Expanded>true</Expanded>
+        <Expanded>false</Expanded>
       </ItemState>
       <ItemState>
         <ItemSymbol>RuntimeCounterUseTickCounter</ItemSymbol>
@@ -7038,7 +7038,7 @@
         <ItemSymbol>TicksGroup</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Expanded>true</Expanded>
+        <Expanded>false</Expanded>
       </ItemState>
       <ItemState>
         <ItemSymbol>TicklessIdleModeEnabled</ItemSymbol>
@@ -7126,7 +7126,7 @@
         <ItemSymbol>QueuesGroup</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Expanded>true</Expanded>
+        <Expanded>false</Expanded>
       </ItemState>
       <ItemState>
         <ItemSymbol>QueueRegistrySize</ItemSymbol>
@@ -7210,7 +7210,7 @@
         <ItemSymbol>MemoryGroup</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Expanded>true</Expanded>
+        <Expanded>false</Expanded>
       </ItemState>
       <ItemState>
         <ItemSymbol>DynamicAllocation</ItemSymbol>
@@ -7362,7 +7362,7 @@
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
         <Value>true</Value>
-        <Expanded>true</Expanded>
+        <Expanded>false</Expanded>
       </ItemState>
       <ItemState>
         <ItemSymbol>ShellMaxNofTasks</ItemSymbol>
@@ -9241,7 +9241,7 @@
           <ComponentUUID>com.freescale.processorexpert.bitio</ComponentUUID>
           <BeanType>BitIO</BeanType>
           <Name>CE1</Name>
-          <CompNumb>10</CompNumb>
+          <CompNumb>264</CompNumb>
           <CompEnabled>true</CompEnabled>
           <GenCodeMode>ALWAYS_WRITE</GenCodeMode>
           <IconName>BITIO</IconName>
@@ -9837,7 +9837,7 @@
           <ComponentUUID>com.freescale.processorexpert.bitio</ComponentUUID>
           <BeanType>BitIO</BeanType>
           <Name>CSN1</Name>
-          <CompNumb>11</CompNumb>
+          <CompNumb>266</CompNumb>
           <CompEnabled>true</CompEnabled>
           <GenCodeMode>ALWAYS_WRITE</GenCodeMode>
           <IconName>BITIO</IconName>
@@ -14775,7 +14775,7 @@
           <ComponentUUID>com.freescale.processorexpert.bitio</ComponentUUID>
           <BeanType>BitIO</BeanType>
           <Name>RESpin1</Name>
-          <CompNumb>28</CompNumb>
+          <CompNumb>268</CompNumb>
           <CompEnabled>true</CompEnabled>
           <GenCodeMode>ALWAYS_WRITE</GenCodeMode>
           <IconName>BITIO</IconName>
@@ -15370,7 +15370,7 @@
           <ComponentUUID>com.freescale.processorexpert.bitio</ComponentUUID>
           <BeanType>BitIO</BeanType>
           <Name>SCEpin1</Name>
-          <CompNumb>30</CompNumb>
+          <CompNumb>270</CompNumb>
           <CompEnabled>true</CompEnabled>
           <GenCodeMode>ALWAYS_WRITE</GenCodeMode>
           <IconName>BITIO</IconName>
@@ -15965,7 +15965,7 @@
           <ComponentUUID>com.freescale.processorexpert.bitio</ComponentUUID>
           <BeanType>BitIO</BeanType>
           <Name>D_Cpin1</Name>
-          <CompNumb>32</CompNumb>
+          <CompNumb>272</CompNumb>
           <CompEnabled>true</CompEnabled>
           <GenCodeMode>ALWAYS_WRITE</GenCodeMode>
           <IconName>BITIO</IconName>
@@ -19708,7 +19708,7 @@
           <ComponentUUID>com.freescale.processorexpert.bitio</ComponentUUID>
           <BeanType>BitIO</BeanType>
           <Name>LEDpin2</Name>
-          <CompNumb>53</CompNumb>
+          <CompNumb>274</CompNumb>
           <CompEnabled>true</CompEnabled>
           <GenCodeMode>ALWAYS_WRITE</GenCodeMode>
           <IconName>BITIO</IconName>
@@ -50417,7 +50417,7 @@
     <BeanType>FSL_USB_Stack</BeanType>
     <Name>USB1</Name>
     <CompNumb>84</CompNumb>
-    <CompEnabled>false</CompEnabled>
+    <CompEnabled>true</CompEnabled>
     <GenCodeMode>ALWAYS_WRITE</GenCodeMode>
     <IconName>FSL_USB_Stack</IconName>
     <UserFolderName />
@@ -51692,8 +51692,7 @@
               <UserReadOnly>false</UserReadOnly>
               <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
               <Index>1</Index>
-              <EnumSymbVal />
-              <Value />
+              <EnumSymbVal>enabled</EnumSymbVal>
             </ItemState>
             <ItemState>
               <ItemSymbol>ClockSettingGrp</ItemSymbol>
@@ -51774,12 +51773,11 @@
               <UserReadOnly>false</UserReadOnly>
               <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
               <Index>0</Index>
-              <EnumSymbVal />
-              <Value />
+              <EnumSymbVal>pllfllClk</EnumSymbVal>
             </ItemState>
             <ItemState>
               <ItemSymbol>DividerInputFreq</ItemSymbol>
-              <Value>20.972 MHz</Value>
+              <Value>96 MHz</Value>
             </ItemState>
             <ItemState>
               <ItemSymbol>DividerClockFraction</ItemSymbol>
@@ -51805,12 +51803,11 @@
               <UserReadOnly>false</UserReadOnly>
               <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
               <Index>0</Index>
-              <EnumSymbVal />
-              <Value />
+              <EnumSymbVal>dividedClk</EnumSymbVal>
             </ItemState>
             <ItemState>
               <ItemSymbol>ModuleClockFreq</ItemSymbol>
-              <Value>10.486 MHz</Value>
+              <Value>48 MHz</Value>
             </ItemState>
             <ItemState>
               <ItemSymbol>PullUpDownGrp</ItemSymbol>
@@ -52874,9 +52871,8 @@
               <ReadOnly>false</ReadOnly>
               <UserReadOnly>false</UserReadOnly>
               <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>0</Index>
-              <EnumSymbVal />
-              <Value />
+              <Index>3</Index>
+              <EnumSymbVal>3</EnumSymbVal>
             </ItemState>
             <ItemState>
               <ItemSymbol>InterruptVector_OTG_ID_CHGPExPriorityFeatureGroup</ItemSymbol>
@@ -53854,7 +53850,7 @@
     <BeanType>Timeout</BeanType>
     <Name>TMOUT1</Name>
     <CompNumb>89</CompNumb>
-    <CompEnabled>false</CompEnabled>
+    <CompEnabled>true</CompEnabled>
     <GenCodeMode>ALWAYS_WRITE</GenCodeMode>
     <IconName>Timeout</IconName>
     <UserFolderName />
@@ -53915,7 +53911,7 @@
     <Methods>
       <ItemState>
         <ItemSymbol>GetCounter</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
+        <ReadOnly>true</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
         <Index>0</Index>
@@ -53926,7 +53922,7 @@
       </ItemState>
       <ItemState>
         <ItemSymbol>LeaveCounter</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
+        <ReadOnly>true</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
         <Index>0</Index>
@@ -53959,7 +53955,7 @@
       </ItemState>
       <ItemState>
         <ItemSymbol>CounterExpired</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
+        <ReadOnly>true</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
         <Index>0</Index>
