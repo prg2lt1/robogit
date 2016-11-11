@@ -44,7 +44,7 @@
 void APP_EventHandler(EVNT_Handle event) {
   switch(event) {
   case EVNT_STARTUP:
-    LED1_On(); /* just do something */
+    LED2_On(); /* just do something */
 	#if PL_CONFIG_HAS_BUZZER
     	BUZ_PlayTune(BUZ_TUNE_WELCOME);
 	#endif
@@ -52,10 +52,10 @@ void APP_EventHandler(EVNT_Handle event) {
     WAIT1_Waitms(5000);
     break;
   case EVNT_LED_OFF:
-  	LED1_Off();
+  	LED2_Off();
   	break;
   case EVNT_LED_HEARTBEAT:
-    LED1_Neg();
+    LED2_Neg();
     break;
 
 #if PL_CONFIG_HAS_KEYS

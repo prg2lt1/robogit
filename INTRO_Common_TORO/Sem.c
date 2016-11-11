@@ -20,7 +20,8 @@
 #include "Sem.h"
 #include "LED.h"
 
-#define USE_SEMAPHORES 0
+#define BLOCK_TIME		1000
+#define USE_SEMAPHORES 1
 
 #if USE_SEMAPHORES
 static void vSlaveTask(void *pvParameters) {
@@ -32,7 +33,10 @@ static void vSlaveTask(void *pvParameters) {
     }
   }
   for(;;) {
-    /*! \todo Implement functionality */
+	  if(xSemaphoreTake(sem, BLOCK_TIME) == pdPASS){ /* wait until Token got */
+	    LEDPin1_NegVal();
+	  }
+
   }
 }
 
@@ -63,6 +67,7 @@ void SEM_Deinit(void) {
 /*! \brief Initializes module */
 void SEM_Init(void) {
 #if USE_SEMAPHORES
+  // Create Master Task
   if (xTaskCreate(vMasterTask, "Master", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY+1, NULL) != pdPASS) {
     for(;;){} /* error */
   }
