@@ -20,7 +20,7 @@
 #include "Sem.h"
 #include "LED.h"
 
-#define BLOCK_TIME		1000
+#define BLOCK_TIME		0
 #define USE_SEMAPHORES 1
 
 #if USE_SEMAPHORES
@@ -51,7 +51,7 @@ static void vMasterTask(void *pvParameters) {
   }
   vQueueAddToRegistry(sem, "IPC_Sem");
   /* create slave task */
-  if (xTaskCreate(vSlaveTask, "Slave", configMINIMAL_STACK_SIZE, sem, tskIDLE_PRIORITY+1, NULL) != pdPASS) {
+  if (xTaskCreate(vSlaveTask, "Slave", configMINIMAL_STACK_SIZE+1, sem, tskIDLE_PRIORITY+1, NULL) != pdPASS) {
     for(;;){} /* error */
   }
   for(;;) {
