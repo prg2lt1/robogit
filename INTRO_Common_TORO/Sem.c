@@ -20,7 +20,7 @@
 #include "Sem.h"
 #include "LED.h"
 
-#define USE_SEMAPHORES 0
+#define USE_SEMAPHORES 1
 
 #if USE_SEMAPHORES
 static void vSlaveTask(void *pvParameters) {
@@ -32,6 +32,9 @@ static void vSlaveTask(void *pvParameters) {
     }
   }
   for(;;) {
+	  if(xSemaphoreTake(sem, portMAX_DELAY) != pdFALSE) {
+	  LED1_Neg();
+	  }
     /*! \todo Implement functionality */
   }
 }

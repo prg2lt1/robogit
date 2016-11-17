@@ -144,6 +144,7 @@ static void REF_MeasureRaw(SensorTimeType raw[REF_NOF_SENSORS]) {
 
   LED_IR_On(); /* IR LED's on */
   WAIT1_Waitus(200);
+  //Hier müsste mutex beginnen
   for(i=0;i<REF_NOF_SENSORS;i++) {
     SensorFctArray[i].SetOutput(); /* turn I/O line as output */
     SensorFctArray[i].SetVal(); /* put high */
@@ -167,6 +168,7 @@ static void REF_MeasureRaw(SensorTimeType raw[REF_NOF_SENSORS]) {
       }
     }
   } while(cnt!=REF_NOF_SENSORS);
+  //mutex bis hier
   LED_IR_Off(); /* IR LED's off */
 }
 
