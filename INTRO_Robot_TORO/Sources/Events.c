@@ -164,25 +164,6 @@ void FRTOS1_vApplicationIdleHook(void)
 
 /*
 ** ===================================================================
-**     Event       :  QuadInt_OnInterrupt (module Events)
-**
-**     Component   :  QuadInt [TimerInt]
-**     Description :
-**         When a timer interrupt occurs this event is called (only
-**         when the component is enabled - <Enable> and the events are
-**         enabled - <EnableEvent>). This event is enabled only if a
-**         <interrupt service/event> is enabled.
-**     Parameters  : None
-**     Returns     : Nothing
-** ===================================================================
-*/
-void QuadInt_OnInterrupt(void)
-{
-  /* Write your code here ... */
-}
-
-/*
-** ===================================================================
 **     Event       :  PTRC1_OnTraceWrap (module Events)
 **
 **     Component   :  PTRC1 [PercepioTrace]
