@@ -31,7 +31,6 @@ void KEY_Scan(void) {
 #if PL_CONFIG_NOF_KEYS>=1 && !PL_CONFIG_KEY_1_ISR
   if (KEY1_Get()) { /* key pressed */
     EVNT_SetEvent(EVNT_SW1_PRESSED);
-    //KEYDBNC_Process();	// Debouncing before setting Event
   }
 #endif
   /*! \todo check handling all keys */
@@ -67,6 +66,7 @@ void KEY_Scan(void) {
 #endif
 }
 
+#if PL_CONFIG_HAS_KBI
 void KEY_EnableInterrupts(void) {
 #if PL_CONFIG_KEY_1_ISR
   SW1_Enable();
@@ -90,6 +90,7 @@ void KEY_EnableInterrupts(void) {
   SW7_Enable();
 #endif
 }
+#endif
 
 #if PL_CONFIG_HAS_KBI
 void KEY_DisableInterrupts(void) {
@@ -171,7 +172,6 @@ void KEY_OnInterrupt(KEY_Buttons button) {
 #endif
 }
 #endif
-
 
 /*! \brief Key driver initialization */
 void KEY_Init(void) {

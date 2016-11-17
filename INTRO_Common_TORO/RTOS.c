@@ -14,6 +14,8 @@
 #include "Application.h"
 #include "KeyDebounce.h"
 
+
+#if 0
 static void LedTask(void* param) {
   const int *whichLED = (int*)param;
 
@@ -29,8 +31,10 @@ static void LedTask(void* param) {
 
   }
 }
+#endif
 
 static void AppTask(void *param) {
+	(void)param;
   for(;;) {
     #if PL_CONFIG_HAS_KEYS
       #if PL_CONFIG_HAS_DEBOUNCE

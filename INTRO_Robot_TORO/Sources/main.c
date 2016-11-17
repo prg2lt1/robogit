@@ -62,6 +62,8 @@
 /* User includes (#include below this line is not maintained by Processor Expert) */
 #include "Application.h"
 
+//void delay(void);
+
 void delay(void) {
   volatile unsigned char i;
 

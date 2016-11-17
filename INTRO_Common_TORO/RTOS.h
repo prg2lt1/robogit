@@ -13,7 +13,6 @@
 #if PL_CONFIG_HAS_RTOS
 /*! \brief Initializes the RTOS module */
 void RTOS_Init(void);
-static void AppTask(void *param) ;
 /*! \brief De-Initializes the RTOS module */
 void RTOS_Deinit(void);
 
