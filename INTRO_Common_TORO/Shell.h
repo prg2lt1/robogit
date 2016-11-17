@@ -18,7 +18,6 @@
  */
 void SHELL_SendString(unsigned char *msg);
 
-CLS1_ConstStdIOType *SHELL_GetStdio(void);
 
 /*! \brief Shell Module initialization, creates Shell task */
 void SHELL_Init(void);

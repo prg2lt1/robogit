@@ -39,6 +39,8 @@
 #include "BitIoLdd2.h"
 #include "SW1.h"
 #include "BitIoLdd3.h"
+//#include "AS1.h"
+//#include "ASerialLdd3.h"
 #include "CLS1.h"
 #include "FRTOS1.h"
 #include "RTOSCNTRLDD1.h"
@@ -63,14 +65,22 @@
 #include "BitIoLdd10.h"
 #include "IR6.h"
 #include "BitIoLdd11.h"
+#include "TMOUT1.h"
+#include "USB1.h"
+#include "CDC1.h"
+#include "Tx1.h"
+#include "Rx1.h"
+#include "USB0.h"
+#include "IFsh1.h"
+#include "IntFlashLdd1.h"
+//#include "PTRC1.h"
 #include "BUZ1.h"
 #include "BitIoLdd4.h"
-#include "TMOUT1.h"
 #include "WAIT1.h"
 #include "CS1.h"
+#include "HF1.h"
 #include "XF1.h"
 #include "KSDK1.h"
-#include "HF1.h"
 #include "UTIL1.h"
 #include "KIN1.h"
 
@@ -127,20 +137,6 @@ void FRTOS1_vApplicationStackOverflowHook(TaskHandle_t pxTask, char *pcTaskName)
 ** ===================================================================
 */
 
-void FRTOS1_vApplicationMallocFailedHook(void);
-/*
-** ===================================================================
-**     Event       :  FRTOS1_vApplicationMallocFailedHook (module Events)
-**
-**     Component   :  FRTOS1 [FreeRTOS]
-**     Description :
-**         If enabled, the RTOS will call this hook in case memory
-**         allocation failed.
-**     Parameters  : None
-**     Returns     : Nothing
-** ===================================================================
-*/
-
 void FRTOS1_vApplicationTickHook(void);
 /*
 ** ===================================================================
@@ -164,6 +160,20 @@ void FRTOS1_vApplicationIdleHook(void);
 **     Description :
 **         If enabled, this hook will be called when the RTOS is idle.
 **         This might be a good place to go into low power mode.
+**     Parameters  : None
+**     Returns     : Nothing
+** ===================================================================
+*/
+
+void FRTOS1_vApplicationMallocFailedHook(void);
+/*
+** ===================================================================
+**     Event       :  FRTOS1_vApplicationMallocFailedHook (module Events)
+**
+**     Component   :  FRTOS1 [FreeRTOS]
+**     Description :
+**         If enabled, the RTOS will call this hook in case memory
+**         allocation failed.
 **     Parameters  : None
 **     Returns     : Nothing
 ** ===================================================================
