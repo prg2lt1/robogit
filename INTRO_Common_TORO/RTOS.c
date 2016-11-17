@@ -64,6 +64,9 @@ void RTOS_Init(void) {
   if (FRTOS1_xTaskCreate(AppTask, (uint8_t *)"App", configMINIMAL_STACK_SIZE, (void*)&led2, tskIDLE_PRIORITY+1, NULL) != pdPASS) {
     for(;;){} /* error case only, stay here! */
   }
+
+
+
 }
 
 void RTOS_Deinit(void) {
