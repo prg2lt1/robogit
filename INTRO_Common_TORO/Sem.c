@@ -20,6 +20,7 @@
 #include "Sem.h"
 #include "LED.h"
 
+#define BLOCK_TIME		0
 #define USE_SEMAPHORES 1
 
 #if USE_SEMAPHORES
@@ -32,10 +33,10 @@ static void vSlaveTask(void *pvParameters) {
     }
   }
   for(;;) {
-	  if(xSemaphoreTake(sem, portMAX_DELAY) != pdFALSE) {
-	  LED1_Neg();
+	  if(xSemaphoreTake(sem, BLOCK_TIME) == pdPASS){ /* wait until Token got */
+	    LEDPin1_NegVal();
 	  }
-    /*! \todo Implement functionality */
+
   }
 }
 
@@ -50,7 +51,7 @@ static void vMasterTask(void *pvParameters) {
   }
   vQueueAddToRegistry(sem, "IPC_Sem");
   /* create slave task */
-  if (xTaskCreate(vSlaveTask, "Slave", configMINIMAL_STACK_SIZE, sem, tskIDLE_PRIORITY+1, NULL) != pdPASS) {
+  if (xTaskCreate(vSlaveTask, "Slave", configMINIMAL_STACK_SIZE+1, sem, tskIDLE_PRIORITY+1, NULL) != pdPASS) {
     for(;;){} /* error */
   }
   for(;;) {
@@ -66,6 +67,7 @@ void SEM_Deinit(void) {
 /*! \brief Initializes module */
 void SEM_Init(void) {
 #if USE_SEMAPHORES
+  // Create Master Task
   if (xTaskCreate(vMasterTask, "Master", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY+1, NULL) != pdPASS) {
     for(;;){} /* error */
   }
