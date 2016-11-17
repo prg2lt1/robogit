@@ -34,7 +34,7 @@ static void vSlaveTask(void *pvParameters) {
   }
   for(;;) {
 	  if(xSemaphoreTake(sem, BLOCK_TIME) == pdPASS){ /* wait until Token got */
-	    LEDPin1_NegVal();
+	    LEDPin2_NegVal();
 	  }
 
   }
