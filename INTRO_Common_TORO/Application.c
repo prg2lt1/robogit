@@ -49,7 +49,7 @@ void APP_EventHandler(EVNT_Handle event) {
     	BUZ_PlayTune(BUZ_TUNE_WELCOME);
 	#endif
     EVNT_SetEvent(EVNT_LED_OFF);
-    WAIT1_Waitms(5000);
+    WAIT1_Waitms(500);
     break;
   case EVNT_LED_OFF:
   	LED1_Off();

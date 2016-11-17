@@ -47,20 +47,31 @@
 #include "TU1.h"
 #include "RTT1.h"
 #include "SYS1.h"
-#include "USB1.h"
-#include "CDC1.h"
-#include "Tx1.h"
-#include "Rx1.h"
-#include "USB0.h"
+#include "LED_IR.h"
+#include "LEDpin3.h"
+#include "BitIoLdd5.h"
+#include "RefCnt.h"
+#include "IR1.h"
+#include "BitIoLdd6.h"
+#include "IR2.h"
+#include "BitIoLdd7.h"
+#include "IR3.h"
+#include "BitIoLdd8.h"
+#include "IR4.h"
+#include "BitIoLdd9.h"
+#include "IR5.h"
+#include "BitIoLdd10.h"
+#include "IR6.h"
+#include "BitIoLdd11.h"
 #include "BUZ1.h"
 #include "BitIoLdd4.h"
 #include "WAIT1.h"
 #include "CS1.h"
+#include "XF1.h"
 #include "KSDK1.h"
 #include "HF1.h"
 #include "UTIL1.h"
 #include "KIN1.h"
-#include "TMOUT1.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -152,6 +163,20 @@ void FRTOS1_vApplicationIdleHook(void);
 **     Description :
 **         If enabled, this hook will be called when the RTOS is idle.
 **         This might be a good place to go into low power mode.
+**     Parameters  : None
+**     Returns     : Nothing
+** ===================================================================
+*/
+
+void PTRC1_OnTraceWrap(void);
+/*
+** ===================================================================
+**     Event       :  PTRC1_OnTraceWrap (module Events)
+**
+**     Component   :  PTRC1 [PercepioTrace]
+**     Description :
+**         Called for trace ring buffer wrap around. This gives the
+**         application a chance to dump the trace buffer.
 **     Parameters  : None
 **     Returns     : Nothing
 ** ===================================================================
