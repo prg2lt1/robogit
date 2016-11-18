@@ -17,17 +17,14 @@
 #include "KIN1.h"
 #if PL_CONFIG_HAS_SHELL
   #include "CLS1.h"
+  #include "Shell.h"
 #endif
 #if PL_CONFIG_HAS_BUZZER
   #include "Buzzer.h"
 #endif
-
 #if PL_CONFIG_HAS_RTOS
   #include "FRTOS1.h"
   #include "RTOS.h"
-#endif
-#if PL_CONFIG_HAS_SHELL
-  #include "Shell.h"
 #endif
 #if PL_CONFIG_HAS_QUADRATURE
   #include "Q4CLeft.h"
@@ -132,8 +129,11 @@ static void APP_AdoptToHardware(void) {
 #if PL_CONFIG_HAS_MOTOR
   if (KIN1_UIDSame(&id, &RoboIDs[2])) { /* L4 */
     MOT_Invert(MOT_GetMotorHandle(MOT_MOTOR_LEFT), TRUE); /* revert left motor */
-    (void)Q4CLeft_SwapPins(TRUE);
-    (void)Q4CRight_SwapPins(TRUE);
+   // (void)Q4CLeft_SwapPins(TRUE);
+   // (void)Q4CRight_SwapPins(TRUE);
+  } else if (KIN1_UIDSame(&id, &RoboIDs[0])) { /* L20 */
+    MOT_Invert(MOT_GetMotorHandle(MOT_MOTOR_LEFT), TRUE); /* revert left motor */
+    MOT_Invert(MOT_GetMotorHandle(MOT_MOTOR_RIGHT), TRUE); /* revert left motor */
   }
 #endif
 #if PL_CONFIG_HAS_QUADRATURE && PL_CONFIG_BOARD_IS_ROBO_V2
@@ -157,7 +157,7 @@ void APP_Start(void) {
 #endif
   PL_Init();
 #if PL_CONFIG_HAS_EVENTS
-  //EVNT_SetEvent(EVNT_STARTUP);
+  EVNT_SetEvent(EVNT_STARTUP);
 #endif
 #if PL_CONFIG_HAS_SHELL && CLS1_DEFAULT_SERIAL
   CLS1_SendStr((uint8_t*)"Hello World!\r\n", CLS1_GetStdio()->stdOut);
@@ -167,14 +167,7 @@ void APP_Start(void) {
   vTaskStartScheduler(); /* start the RTOS, create the IDLE task and run my tasks (if any) */
   /* does usually not return! */
 #else
-
-  /**
-   geit nid....chame lösche
-
-  char str = "Hello World \r\n";
-  char *pstr = &str;
-  CLS1_SendStr(str, CLS1_GetStdio()->stdOut);
-*/
+  //EVNT_SetEvent(EVNT_STARTUP);
   for(;;) {
 	#if PL_CONFIG_HAS_KEYS
   	  #if PL_CONFIG_HAS_DEBOUNCE
