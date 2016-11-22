@@ -39,6 +39,7 @@
 #if REF_START_STOP_CALIB
   static xSemaphoreHandle REF_StartStopSem = NULL;
 #endif
+static xSemaphoreHandle mutexHandle;
 
 typedef enum {
   REF_STATE_INIT,
@@ -142,9 +143,9 @@ static void REF_MeasureRaw(SensorTimeType raw[REF_NOF_SENSORS]) {
   RefCnt_TValueType timerVal;
   /*! \todo Consider reentrancy and mutual exclusion! */
 
+  (void)xSemaphoreTake(mutexHandle, portMAX_DELAY);
   LED_IR_On(); /* IR LED's on */
   WAIT1_Waitus(200);
-  //Hier müsste mutex beginnen
   for(i=0;i<REF_NOF_SENSORS;i++) {
     SensorFctArray[i].SetOutput(); /* turn I/O line as output */
     SensorFctArray[i].SetVal(); /* put high */
@@ -168,8 +169,8 @@ static void REF_MeasureRaw(SensorTimeType raw[REF_NOF_SENSORS]) {
       }
     }
   } while(cnt!=REF_NOF_SENSORS);
-  //mutex bis hier
   LED_IR_Off(); /* IR LED's off */
+  (void)xSemaphoreGive(mutexHandle);
 }
 
 static void REF_CalibrateMinMax(SensorTimeType min[REF_NOF_SENSORS], SensorTimeType max[REF_NOF_SENSORS], SensorTimeType raw[REF_NOF_SENSORS]) {
@@ -368,7 +369,7 @@ static unsigned char*REF_GetStateString(void) {
 }
 
 #if PL_CONFIG_HAS_LINE_FOLLOW
-unsigned char *REF_LineKindStr(REF_LineKind line) {
+static unsigned char *REF_LineKindStr(REF_LineKind line) {
   switch(line) {
   case REF_LINE_NONE:
     return (unsigned char *)"NONE";
@@ -585,12 +586,20 @@ void REF_Deinit(void) {
 
 void REF_Init(void) {
 #if REF_START_STOP_CALIB
-  FRTOS1_vSemaphoreCreateBinary(REF_StartStopSem);
+  vSemaphoreCreateBinary(REF_StartStopSem);
   if (REF_StartStopSem==NULL) { /* semaphore creation failed */
     for(;;){} /* error */
   }
-  (void)FRTOS1_xSemaphoreTake(REF_StartStopSem, 0); /* empty token */
+  (void)xSemaphoreTake(REF_StartStopSem, 0); /* empty token */
   FRTOS1_vQueueAddToRegistry(REF_StartStopSem, "RefStartStopSem");
+#endif
+  mutexHandle = xSemaphoreCreateMutex();
+  if (mutexHandle==NULL) {
+    for(;;);
+  }
+  vQueueAddToRegistry(mutexHandle, "RefSem");
+#if configUSE_TRACE_HOOKS
+  PTRC1_vTraceSetQueueName(mutexHandle, "RefSem");
 #endif
   refState = REF_STATE_INIT;
   timerHandle = RefCnt_Init(NULL);

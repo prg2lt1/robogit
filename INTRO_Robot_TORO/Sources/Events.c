@@ -206,6 +206,7 @@ void PTRC1_OnTraceWrap(void)
 */
 void QuadInt_OnInterrupt(void)
 {
+
 #if PL_CONFIG_HAS_QUADRATURE
 
 	Q4CLeft_Sample();
