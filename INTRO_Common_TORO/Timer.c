@@ -29,7 +29,7 @@ void TMR_OnInterrupt(void) {
 	#endif
 
 	static unsigned int cnt = 0;
-	#define BLINK_PERIOD_MS 1000
+	#define BLINK_PERIOD_MS 100
 		cnt++;
 	#if PL_CONFIG_HAS_EVENTS
 	  if ((cnt%(BLINK_PERIOD_MS/TMR_TICK_MS))==0)
