@@ -37,6 +37,8 @@ extern "C" {
 /* User includes (#include below this line is not maintained by Processor Expert) */
 #include "Platform.h"
 #include "Timer.h"
+#include "Tacho.h"
+
 /*
 ** ===================================================================
 **     Event       :  Cpu_OnNMIINT (module Events)
@@ -121,6 +123,10 @@ void FRTOS1_vApplicationTickHook(void)
   /* Called for every RTOS tick. */
 #if PL_CONFIG_HAS_TIMER
   TMR_OnInterrupt();
+#endif
+
+#if PL_CONFIG_HAS_MOTOR_TACHO
+  TACHO_Sample();
 #endif
 }
 
