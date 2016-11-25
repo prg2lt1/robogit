@@ -48,7 +48,7 @@ static int32_t PID(int32_t currVal, int32_t setVal, PID_Config *config) {
   return pid;
 }
 
-void PID_SpeedCfg(int32_t currSpeed, int32_t setSpeed, bool isLeft, PID_Config *config) {
+static void PID_SpeedCfg(int32_t currSpeed, int32_t setSpeed, bool isLeft, PID_Config *config) {
   int32_t speed;
   MOT_Direction direction=MOT_DIR_FORWARD;
   MOT_MotorDevice *motHandle;
@@ -102,7 +102,7 @@ static uint8_t errorWithinPercent(int32_t error) {
 
 #define PID_DEBUG 0
 
-void PID_LineCfg(uint16_t currLine, uint16_t setLine, PID_Config *config) {
+static void PID_LineCfg(uint16_t currLine, uint16_t setLine, PID_Config *config) {
   int32_t pid, speed, speedL, speedR;
 #if PID_DEBUG
   unsigned char buf[16];
@@ -224,7 +224,7 @@ void PID_Speed(int32_t currSpeed, int32_t setSpeed, bool isLeft) {
   }
 }
 
-void PID_PosCfg(int32_t currPos, int32_t setPos, bool isLeft, PID_Config *config) {
+static void PID_PosCfg(int32_t currPos, int32_t setPos, bool isLeft, PID_Config *config) {
   int32_t speed, val;
   MOT_Direction direction=MOT_DIR_FORWARD;
   MOT_MotorDevice *motHandle;
