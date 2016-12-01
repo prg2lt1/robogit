@@ -15,6 +15,7 @@
 #include "Keys.h"
 #include "KeyDebounce.h"
 #include "KIN1.h"
+#include "LineFollow.h"
 #if PL_CONFIG_HAS_SHELL
   #include "CLS1.h"
   #include "Shell.h"
@@ -60,8 +61,7 @@ void APP_EventHandler(EVNT_Handle event) {
 #if PL_CONFIG_HAS_KEYS
   #if PL_CONFIG_NOF_KEYS>=1
     case EVNT_SW1_PRESSED:
-    LED1_Neg();
-    SHELL_SendString("SW1 pressed\r\n");
+    	LF_StartStopFollowing();
     #if PL_CONFIG_HAS_BUZZER
     	BUZ_PlayTune(BUZ_TUNE_BUTTON);
     #endif
