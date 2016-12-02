@@ -4,35 +4,35 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/Application.c \
-C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/Buzzer.c \
-C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/Debounce.c \
-C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/Drive.c \
-C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/Event.c \
-C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/KeyDebounce.c \
-C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/Keys.c \
-C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/LCD.c \
-C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/LCDMenu.c \
-C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/LED.c \
-C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/LineFollow.c \
-C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/MCP4728.c \
-C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/Maze.c \
-C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/Motor.c \
-C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/NVM_Config.c \
-C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/Pid.c \
-C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/Platform.c \
-C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/QuadCalib.c \
-C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/RNet_App.c \
-C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/RTOS.c \
-C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/Reflectance.c \
-C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/Remote.c \
-C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/Sem.c \
-C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/Shell.c \
-C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/ShellQueue.c \
-C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/Tacho.c \
-C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/Timer.c \
-C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/Trigger.c \
-C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/Turn.c 
+/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/Application.c \
+/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/Buzzer.c \
+/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/Debounce.c \
+/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/Drive.c \
+/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/Event.c \
+/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/KeyDebounce.c \
+/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/Keys.c \
+/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/LCD.c \
+/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/LCDMenu.c \
+/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/LED.c \
+/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/LineFollow.c \
+/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/MCP4728.c \
+/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/Maze.c \
+/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/Motor.c \
+/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/NVM_Config.c \
+/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/Pid.c \
+/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/Platform.c \
+/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/QuadCalib.c \
+/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/RNet_App.c \
+/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/RTOS.c \
+/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/Reflectance.c \
+/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/Remote.c \
+/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/Sem.c \
+/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/Shell.c \
+/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/ShellQueue.c \
+/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/Tacho.c \
+/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/Timer.c \
+/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/Trigger.c \
+/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/Turn.c 
 
 OBJS += \
 ./Sources/INTRO_Common_TORO/Application.o \
@@ -98,206 +98,206 @@ C_DEPS += \
 
 
 # Each subdirectory must supply rules for building sources it contributes
-Sources/INTRO_Common_TORO/Application.o: C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/Application.c
+Sources/INTRO_Common_TORO/Application.o: /Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/Application.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/PDD" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/IO_Map" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Sources" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Generated_Code" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Sources/INTRO_Common_TORO/Buzzer.o: C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/Buzzer.c
+Sources/INTRO_Common_TORO/Buzzer.o: /Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/Buzzer.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/PDD" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/IO_Map" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Sources" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Generated_Code" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Sources/INTRO_Common_TORO/Debounce.o: C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/Debounce.c
+Sources/INTRO_Common_TORO/Debounce.o: /Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/Debounce.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/PDD" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/IO_Map" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Sources" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Generated_Code" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Sources/INTRO_Common_TORO/Drive.o: C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/Drive.c
+Sources/INTRO_Common_TORO/Drive.o: /Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/Drive.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/PDD" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/IO_Map" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Sources" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Generated_Code" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Sources/INTRO_Common_TORO/Event.o: C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/Event.c
+Sources/INTRO_Common_TORO/Event.o: /Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/Event.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/PDD" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/IO_Map" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Sources" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Generated_Code" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Sources/INTRO_Common_TORO/KeyDebounce.o: C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/KeyDebounce.c
+Sources/INTRO_Common_TORO/KeyDebounce.o: /Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/KeyDebounce.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/PDD" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/IO_Map" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Sources" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Generated_Code" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Sources/INTRO_Common_TORO/Keys.o: C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/Keys.c
+Sources/INTRO_Common_TORO/Keys.o: /Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/Keys.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/PDD" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/IO_Map" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Sources" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Generated_Code" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Sources/INTRO_Common_TORO/LCD.o: C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/LCD.c
+Sources/INTRO_Common_TORO/LCD.o: /Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/LCD.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/PDD" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/IO_Map" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Sources" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Generated_Code" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Sources/INTRO_Common_TORO/LCDMenu.o: C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/LCDMenu.c
+Sources/INTRO_Common_TORO/LCDMenu.o: /Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/LCDMenu.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/PDD" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/IO_Map" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Sources" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Generated_Code" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Sources/INTRO_Common_TORO/LED.o: C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/LED.c
+Sources/INTRO_Common_TORO/LED.o: /Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/LED.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/PDD" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/IO_Map" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Sources" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Generated_Code" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Sources/INTRO_Common_TORO/LineFollow.o: C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/LineFollow.c
+Sources/INTRO_Common_TORO/LineFollow.o: /Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/LineFollow.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/PDD" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/IO_Map" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Sources" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Generated_Code" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Sources/INTRO_Common_TORO/MCP4728.o: C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/MCP4728.c
+Sources/INTRO_Common_TORO/MCP4728.o: /Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/MCP4728.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/PDD" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/IO_Map" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Sources" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Generated_Code" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Sources/INTRO_Common_TORO/Maze.o: C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/Maze.c
+Sources/INTRO_Common_TORO/Maze.o: /Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/Maze.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/PDD" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/IO_Map" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Sources" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Generated_Code" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Sources/INTRO_Common_TORO/Motor.o: C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/Motor.c
+Sources/INTRO_Common_TORO/Motor.o: /Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/Motor.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/PDD" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/IO_Map" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Sources" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Generated_Code" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Sources/INTRO_Common_TORO/NVM_Config.o: C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/NVM_Config.c
+Sources/INTRO_Common_TORO/NVM_Config.o: /Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/NVM_Config.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/PDD" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/IO_Map" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Sources" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Generated_Code" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Sources/INTRO_Common_TORO/Pid.o: C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/Pid.c
+Sources/INTRO_Common_TORO/Pid.o: /Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/Pid.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/PDD" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/IO_Map" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Sources" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Generated_Code" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Sources/INTRO_Common_TORO/Platform.o: C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/Platform.c
+Sources/INTRO_Common_TORO/Platform.o: /Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/Platform.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/PDD" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/IO_Map" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Sources" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Generated_Code" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Sources/INTRO_Common_TORO/QuadCalib.o: C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/QuadCalib.c
+Sources/INTRO_Common_TORO/QuadCalib.o: /Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/QuadCalib.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/PDD" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/IO_Map" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Sources" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Generated_Code" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Sources/INTRO_Common_TORO/RNet_App.o: C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/RNet_App.c
+Sources/INTRO_Common_TORO/RNet_App.o: /Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/RNet_App.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/PDD" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/IO_Map" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Sources" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Generated_Code" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Sources/INTRO_Common_TORO/RTOS.o: C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/RTOS.c
+Sources/INTRO_Common_TORO/RTOS.o: /Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/RTOS.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/PDD" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/IO_Map" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Sources" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Generated_Code" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Sources/INTRO_Common_TORO/Reflectance.o: C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/Reflectance.c
+Sources/INTRO_Common_TORO/Reflectance.o: /Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/Reflectance.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/PDD" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/IO_Map" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Sources" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Generated_Code" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Sources/INTRO_Common_TORO/Remote.o: C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/Remote.c
+Sources/INTRO_Common_TORO/Remote.o: /Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/Remote.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/PDD" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/IO_Map" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Sources" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Generated_Code" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Sources/INTRO_Common_TORO/Sem.o: C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/Sem.c
+Sources/INTRO_Common_TORO/Sem.o: /Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/Sem.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/PDD" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/IO_Map" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Sources" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Generated_Code" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Sources/INTRO_Common_TORO/Shell.o: C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/Shell.c
+Sources/INTRO_Common_TORO/Shell.o: /Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/Shell.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/PDD" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/IO_Map" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Sources" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Generated_Code" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Sources/INTRO_Common_TORO/ShellQueue.o: C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/ShellQueue.c
+Sources/INTRO_Common_TORO/ShellQueue.o: /Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/ShellQueue.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/PDD" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/IO_Map" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Sources" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Generated_Code" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Sources/INTRO_Common_TORO/Tacho.o: C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/Tacho.c
+Sources/INTRO_Common_TORO/Tacho.o: /Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/Tacho.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/PDD" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/IO_Map" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Sources" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Generated_Code" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Sources/INTRO_Common_TORO/Timer.o: C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/Timer.c
+Sources/INTRO_Common_TORO/Timer.o: /Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/Timer.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/PDD" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/IO_Map" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Sources" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Generated_Code" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Sources/INTRO_Common_TORO/Trigger.o: C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/Trigger.c
+Sources/INTRO_Common_TORO/Trigger.o: /Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/Trigger.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/PDD" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/IO_Map" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Sources" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Generated_Code" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Sources/INTRO_Common_TORO/Turn.o: C:/Users/rober_000/Documents/GitHub/robogit/INTRO_Common_TORO/Turn.c
+Sources/INTRO_Common_TORO/Turn.o: /Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Common_TORO/Turn.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	echo -mcpu=cortex-m3 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/PDD" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Static_Code/IO_Map" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Sources" -I"/Users/tobias/Documents/Studium/7.Semester/INTRO/GitRobot/INTRO_Robot_TORO/Generated_Code" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

@@ -117,7 +117,7 @@ typedef struct {
     return &SHELL_stdio;
   }
 #else
-  static CLS1_ConstStdIOType *SHELL_GetStdio(void) {
+  CLS1_ConstStdIOType *SHELL_GetStdio(void) {
     return CLS1_GetStdio();
   }
 #endif
@@ -317,7 +317,7 @@ static void ShellTask(void *pvParameters) {
 
       msg = SQUEUE_ReceiveMessage();
       if (msg!=NULL) {
-        CLS1_SendStr(msg, CLS1_GetStdio()->stdOut);
+        CLS1_SendStr(msg, RTT1_stdio.stdOut);
         FRTOS1_vPortFree((void*)msg);
       }
     }
