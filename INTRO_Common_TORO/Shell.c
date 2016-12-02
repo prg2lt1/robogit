@@ -290,7 +290,7 @@ static void ShellTask(void *pvParameters) {
     ios[i].buf[0] = '\0';
   }
 #endif
-  SHELL_SendString("Shell task stared!\r\n");
+  SHELL_SendString("Shell task started!\r\n");
 #if CLS1_DEFAULT_SERIAL
   (void)CLS1_ParseWithCommandTable((unsigned char*)CLS1_CMD_HELP, ios[0].stdio, CmdParserTable);
 #endif
@@ -317,11 +317,7 @@ static void ShellTask(void *pvParameters) {
 
       msg = SQUEUE_ReceiveMessage();
       if (msg!=NULL) {
-#if SHELL_HANDLER_ARRAY
-        CLS1_SendStr(msg, ios[0].stdio->stdOut);
-#else
         CLS1_SendStr(msg, CLS1_GetStdio()->stdOut);
-#endif
         FRTOS1_vPortFree((void*)msg);
       }
     }
