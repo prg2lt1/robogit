@@ -374,4 +374,5 @@ void DRV_Init(void) {
     for(;;){} /* error */
   }
 }
+
 #endif /* PL_CONFIG_HAS_DRIVE */

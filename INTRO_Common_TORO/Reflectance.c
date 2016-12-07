@@ -168,7 +168,7 @@ static void REF_MeasureRaw(SensorTimeType raw[REF_NOF_SENSORS]) {
         cnt++;
       }
     }
-  } while(cnt!=REF_NOF_SENSORS && timerVal <= 14000);
+  } while(cnt!=REF_NOF_SENSORS && timerVal <= 30000);
   LED_IR_Off(); /* IR LED's off */
   (void)xSemaphoreGive(mutexHandle);
 }

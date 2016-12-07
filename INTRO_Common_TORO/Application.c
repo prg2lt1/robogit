@@ -61,7 +61,9 @@ void APP_EventHandler(EVNT_Handle event) {
 #if PL_CONFIG_HAS_KEYS
   #if PL_CONFIG_NOF_KEYS>=1
     case EVNT_SW1_PRESSED:
+	#if PL_CONFIG_HAS_LINE_FOLLOW
     	LF_StartStopFollowing();
+	#endif
     #if PL_CONFIG_HAS_BUZZER
     	BUZ_PlayTune(BUZ_TUNE_BUTTON);
     #endif
