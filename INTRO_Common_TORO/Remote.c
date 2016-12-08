@@ -39,7 +39,7 @@
 static bool REMOTE_isOn = FALSE;
 static bool REMOTE_isVerbose = FALSE;
 static bool REMOTE_useJoystick = TRUE;
-#if PL_CONFIG_HAS_JOYSTICK
+#if PL_CONFIG_CONTROL_SENDER
 static uint16_t midPointX, midPointY;
 #endif
 
