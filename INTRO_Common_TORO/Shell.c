@@ -77,6 +77,9 @@
 #if PL_CONFIG_HAS_USB_CDC
   #include "CDC1.h"
 #endif
+#if PL_CONFIG_HAS_BATTERY_ADC
+  #include "Battery.h"
+#endif
 #include "KIN1.h"
 
 #define SHELL_HANDLER_ARRAY   1
@@ -192,6 +195,9 @@ static const CLS1_ParseCommandCallback CmdParserTable[] =
 #if KIN1_PARSE_COMMAND_ENABLED
   KIN1_ParseCommand,
 #endif
+#if PL_CONFIG_HAS_BATTERY_ADC
+  BATT_ParseCommand,
+#endif
 #if PL_CONFIG_HAS_DRIVE
   DRV_ParseCommand,
 #endif
@@ -278,12 +284,19 @@ static uint8_t SHELL_ParseCommand(const unsigned char *cmd, bool *handled, const
 
 #if PL_CONFIG_HAS_RTOS
 static void ShellTask(void *pvParameters) {
+#if RNET_CONFIG_REMOTE_STDIO
+  static unsigned char radio_cmd_buf[48];
+  CLS1_ConstStdIOType *ioRemote = RSTDIO_GetStdioRx();
+#endif
 #if SHELL_HANDLER_ARRAY
   int i;
 #endif
   /* \todo Extend as needed */
 
   (void)pvParameters; /* not used */
+#if RNET_CONFIG_REMOTE_STDIO
+  radio_cmd_buf[0] = '\0';
+#endif
 #if SHELL_HANDLER_ARRAY
   /* initialize buffers */
   for(i=0;i<sizeof(ios)/sizeof(ios[0]);i++) {
@@ -300,6 +313,10 @@ static void ShellTask(void *pvParameters) {
     for(i=0;i<sizeof(ios)/sizeof(ios[0]);i++) {
       (void)CLS1_ReadAndParseWithCommandTable(ios[i].buf, ios[i].bufSize, ios[i].stdio, CmdParserTable);
     }
+#endif
+#if RNET_CONFIG_REMOTE_STDIO
+    RSTDIO_Print(&SHELL_stdio); /* dispatch incoming messages */
+    (void)CLS1_ReadAndParseWithCommandTable(radio_cmd_buf, sizeof(radio_cmd_buf), ioRemote, CmdParserTable);
 #endif
 #if PL_CONFIG_HAS_SHELL_QUEUE
 #if PL_CONFIG_SQUEUE_SINGLE_CHAR
