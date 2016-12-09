@@ -75,6 +75,9 @@
 #if PL_CONFIG_HAS_LCD
   #include "LCD.h"
 #endif
+#if PL_CONFIG_HAS_BATTERY_ADC
+  #include "Battery.h"
+#endif
 
 void PL_Init(void) {
 #if PL_CONFIG_HAS_LEDS
@@ -146,9 +149,15 @@ void PL_Init(void) {
 #if PL_CONFIG_HAS_LCD
   LCD_Init();
 #endif
+#if PL_CONFIG_HAS_BATTERY_ADC
+  BATT_Init();
+#endif
 }
 
 void PL_Deinit(void) {
+#if PL_CONFIG_HAS_BATTERY_ADC
+  BATT_Deinit();
+#endif
 #if PL_CONFIG_HAS_LCD
   LCD_Deinit();
 #endif
