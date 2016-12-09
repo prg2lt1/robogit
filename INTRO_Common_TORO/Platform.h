@@ -95,7 +95,7 @@
 #define PL_CONFIG_HAS_TURN              (1 && !defined(PL_LOCAL_CONFIG_HAS_TURN_DISABLED) && PL_CONFIG_HAS_QUADRATURE)
 #define PL_CONFIG_HAS_LINE_MAZE         (1 && !defined(PL_LOCAL_CONFIG_HAS_LINE_MAZE_DISABLED) && PL_CONFIG_HAS_LINE_FOLLOW)
 
-#define PL_CONFIG_HAS_BATTERY_ADC       (1 && PL_CONFIG_BOARD_IS_ROBO)
+#define PL_CONFIG_HAS_BATTERY_ADC       (0) //(1 && PL_CONFIG_BOARD_IS_ROBO)
 
 /*!
  * \brief Driver de-initialization

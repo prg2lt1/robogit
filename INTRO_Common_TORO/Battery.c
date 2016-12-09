@@ -5,11 +5,11 @@
  *
  * Deals with the robot battery.
  */
-
+#if 0
 #include "Platform.h"
 #if PL_CONFIG_HAS_BATTERY_ADC
 #include "Battery.h"
-#include "ADC_Bat.h"
+//#include "ADC_Bat.h"
 #include "CLS1.h"
 #include "FRTOS1.h"
 
@@ -84,3 +84,4 @@ void BATT_Deinit(void) {
 }
 
 #endif /* PL_CONFIG_HAS_BATTERY_ADC */
+#endif

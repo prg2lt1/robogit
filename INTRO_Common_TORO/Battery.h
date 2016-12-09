@@ -5,7 +5,7 @@
  *
  * Interface to the robot battery management.
  */
-
+#if 0
 #ifndef SOURCES_INTRO_ROBOLIB_BATTERY_H_
 #define SOURCES_INTRO_ROBOLIB_BATTERY_H_
 
@@ -44,3 +44,4 @@ void BATT_Deinit(void);
 #endif /* PL_CONFIG_HAS_BATTERY_ADC */
 
 #endif /* SOURCES_INTRO_ROBOLIB_BATTERY_H_ */
+#endif

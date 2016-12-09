@@ -195,9 +195,9 @@ static const CLS1_ParseCommandCallback CmdParserTable[] =
 #if KIN1_PARSE_COMMAND_ENABLED
   KIN1_ParseCommand,
 #endif
-#if PL_CONFIG_HAS_BATTERY_ADC
-  BATT_ParseCommand,
-#endif
+//#if PL_CONFIG_HAS_BATTERY_ADC
+//  BATT_ParseCommand,
+//#endif
 #if PL_CONFIG_HAS_DRIVE
   DRV_ParseCommand,
 #endif
@@ -315,7 +315,7 @@ static void ShellTask(void *pvParameters) {
     }
 #endif
 #if RNET_CONFIG_REMOTE_STDIO
-    RSTDIO_Print(&SHELL_stdio); /* dispatch incoming messages */
+    RSTDIO_Print(&RTT1_stdio); /* dispatch incoming messages */
     (void)CLS1_ReadAndParseWithCommandTable(radio_cmd_buf, sizeof(radio_cmd_buf), ioRemote, CmdParserTable);
 #endif
 #if PL_CONFIG_HAS_SHELL_QUEUE
